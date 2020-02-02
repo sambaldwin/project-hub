@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+---
+
+<header class="site-header">
+  <h1 class="site-header__title">
+    {% if backLink != false %}
+      <a href="../">{{ projectTitle }}</a>
+    {% else %}
+      {{ projectTitle }}
+    {% endif %}
+  </h1>
+</header>
+
+<main class="site-main">
+  {{ content | safe }}
+</main>
+
+<footer class="site-footer">
+  <p>{{ site.footerText | safe }}</p>
+</footer>

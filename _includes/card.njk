@@ -1,0 +1,18 @@
+<article class="post">
+  {% if post.data.featuredImage %}
+    <a href="{{ post.url }}">
+      <img class="post__image" src="{{ '/media/' + post.data.featuredImage }}" alt="">
+    </a>
+  {% endif %}
+  <header class="post__header">
+    <time class="post__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    <h2 class="post__title">
+      <a class="post__link" href="{{ post.url }}">{{ post.data.title }}</a>
+    </h2>
+  </header>
+  {% if post.data.excerpt %}
+    <div class="post__body">
+      <p>{{ post.data.excerpt | safe }}</p>
+    </div>
+  {% endif %}
+</article>
