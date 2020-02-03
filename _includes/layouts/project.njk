@@ -4,11 +4,7 @@ layout: layouts/base.njk
 
 <header class="site-header">
   <h1 class="site-header__title">
-    {% if backLink != false %}
-      <a href="../">{{ projectTitle }}</a>
-    {% else %}
-      {{ projectTitle }}
-    {% endif %}
+    <a href="/">{{ site.title }}</a>
   </h1>
 </header>
 

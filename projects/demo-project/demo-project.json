@@ -1,5 +1,0 @@
-{
-  "projectTitle": "Demo project",
-  "tags": ["demoProject"],
-  "layout": "layouts/post.njk"
-}
