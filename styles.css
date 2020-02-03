@@ -264,3 +264,12 @@ tr > *:not(:last-child) {
 .post__body > *:last-child {
   margin-bottom: 0;
 }
+
+.anchor-link {
+  color: transparent;
+  text-decoration: none;
+}
+
+:hover > .anchor-link {
+  color: var(--color-text-muted);
+}
