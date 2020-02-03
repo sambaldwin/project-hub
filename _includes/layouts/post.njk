@@ -5,9 +5,7 @@ layout: layouts/project.njk
 <div class="post">
   <header class="post__header">
     <time class="post__date" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-    <h2 class="post__title">
-      <a class="post__link" href="{{ post.url }}">{{ title }}</a>
-    </h2>
+    <h2 class="post__title">{{ title }}</h2>
   </header>
   <div class="post__body">
     {{ content | safe }}

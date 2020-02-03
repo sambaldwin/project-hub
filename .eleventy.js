@@ -1,4 +1,6 @@
 const { DateTime } = require("luxon");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("readableDate", dateObj => {
@@ -12,6 +14,18 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("styles.css");
   eleventyConfig.addPassthroughCopy("media");
+
+  // Markdown Overrides
+  let markdownLibrary = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true
+  }).use(markdownItAnchor, {
+    permalink: true,
+    permalinkClass: "anchor-link",
+    permalinkSymbol: "#"
+  });
+  eleventyConfig.setLibrary("md", markdownLibrary);
 
   return {
     templateFormats: ["md", "njk", "html", "liquid"],
