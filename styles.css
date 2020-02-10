@@ -45,7 +45,7 @@ body {
   padding: 0 1rem;
 }
 
-@media (min-width: 60em) {
+@media (min-width: 80em) {
   body {
     padding: 0 2rem;
   }
