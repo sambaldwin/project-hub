@@ -54,6 +54,7 @@ body {
 img,
 video {
   display: inline-block;
+  height: auto;
   margin-bottom: 2em;
   margin-top: 2em;
   max-width: 100%;
