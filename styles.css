@@ -51,6 +51,10 @@ body {
   }
 }
 
+:target {
+  scroll-margin-block-start: 1rem;
+}
+
 img,
 video {
   display: inline-block;
