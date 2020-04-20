@@ -262,10 +262,6 @@ tr > *:not(:last-child) {
   color: var(--color-text-muted);
 }
 
-.post__body > *:first-child:not(figure):not(img) {
-  margin-top: 0;
-}
-
 .post__body > *:last-child {
   margin-bottom: 0;
 }
