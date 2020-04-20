@@ -182,17 +182,24 @@ small {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 2em;
+  margin-top: 2em;
   text-align: left;
 }
 
 th,
 td {
-  padding: 0;
+  padding: 0.25em 0;
   vertical-align: baseline;
 }
 
 tr > *:not(:last-child) {
   padding-right: 2rem;
+}
+
+tr td {
+  border-top: var(--rule-width) solid var(--color-rule);
 }
 
 .site-header {
